@@ -1,0 +1,150 @@
+/*================================================================================================================================
+ FORMULARIO 
+==================================================================================================================================*/
+
+.formulario{ float:left; width:100%; height:auto; font-family: 'OpenSans', sans-serif;}
+.formulario ul{display: table; margin:10px 0 10px 18%;}
+.formulario ul li{float: none; list-style: none; margin: 0 30px 5px 0; }
+
+.formulario label{ width:20%; float:left; text-align:right; padding:10px 15px 0 0;}
+.formulario label.error { float: none; position: relative; top:-5px; left:21%; color: #f00; vertical-align: top; font-size: 12px; text-align: left; display: block; border-left:3px solid #f00;  padding: 0px 0 0 5px; margin: 0 0 5px 0;}
+
+.formulario input{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none; 
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;} 
+.formulario input:focus{border:1px solid #bab9b9; background: #f4f4f4;}
+.formulario input.g{ width:50%;}
+.formulario input.m{ width:30%;}
+.formulario input.p{ width:15%;}
+.formulario input.pp{ width:5%;}
+
+.formulario select{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none;
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;}
+.formulario select:focus{border:1px solid #bab9b9; background: #f4f4f4;}
+.formulario select.g{ width:50%;}
+.formulario select.m{ width:30%;}
+.formulario select.p{ width:15%;}
+.formulario select.pp{ width:5%;}
+
+.formulario textarea{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none;
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;}
+.formulario textarea:focus{border:1px solid #bab9b9; background: #f4f4f4;}
+.formulario textarea.g{ width:50%;}
+.formulario textarea.m{ width:30%;}
+.formulario textarea.p{ width:15%;}
+.formulario textarea.pp{ width:5%;}
+
+.formulario input[type="radio"]{ float: left; margin:1px 5px 0 0;}
+.formulario input[type="checkbox"]{ float: left; margin:1px 5px 0 0;}
+
+.formulario input[type="submit"]{float:left; border-radius:5px; padding:10px 20px 10px 20px; margin:20px 0 20px 66%; background: #000; border:solid 0px; color:#fff; cursor:pointer;}
+.formulario input[type="submit"]:hover{background: #666;}
+
+/*================================================================================================================================
+ FORMULARIO RESPONSIVO 
+==================================================================================================================================*/
+/* RESOLUÇÃO TABLETS 10" */
+
+@media only screen and (max-width:989px){
+	.formulario{ float:none; width:80%; margin:auto;}
+	.formulario ul{margin:10px 0 10px 0%;}
+	.formulario label{width: 100%; text-align: left; float: none; margin:0 0 7px 0; display: block;}
+	.formulario label.error {left:0%;}
+
+	.formulario input.g{ width:80%;}
+	.formulario input.m{ width:60%;}
+	.formulario input.p{ width:50%;}
+	.formulario input.pp{ width:30%;}
+
+	.formulario select.g{ width:80%;}
+	.formulario select.m{ width:60%;}
+	.formulario select.p{ width:50%;}
+	.formulario select.pp{ width:30%;}
+
+	.formulario textarea.g{ width:80%;}
+	.formulario textarea.m{ width:60%;}
+	.formulario textarea.p{ width:50%;}
+	.formulario textarea.pp{ width:30%;}
+	}
+
+/*================================================================================================================================
+ DATAPICKER CALENDARIO
+==================================================================================================================================*/
+
+.Zebra_DatePicker *,
+.Zebra_DatePicker *:after,
+.Zebra_DatePicker *:before  {font-family: 'OpenSans', sans-serif; -moz-box-sizing: content-box !important; -webkit-box-sizing: content-box !important; box-sizing: content-box !important }
+
+.Zebra_DatePicker           { position: absolute; background: #FFF; border: 1px solid #999; z-index: 1200; padding: 5px; top: 0; margin:140px 0 0 0;}
+
+.Zebra_DatePicker *         { margin: 0; padding: 0; color: #373737; background: transparent; border: none }
+
+.Zebra_DatePicker table                      { border-collapse: collapse; border-spacing: 0; width: auto; table-layout: auto; }
+
+.Zebra_DatePicker td,
+.Zebra_DatePicker th                         { text-align: center; padding: 5px 0 }
+
+.Zebra_DatePicker td                         { cursor: pointer }
+
+.Zebra_DatePicker .dp_daypicker,
+.Zebra_DatePicker .dp_monthpicker,
+.Zebra_DatePicker .dp_yearpicker             { margin-top: 3px }
+
+.Zebra_DatePicker .dp_daypicker td,
+.Zebra_DatePicker .dp_daypicker th,
+.Zebra_DatePicker .dp_monthpicker td,
+.Zebra_DatePicker .dp_yearpicker td         { width: 30px }
+
+.Zebra_DatePicker,
+.Zebra_DatePicker .dp_header .dp_hover,
+.Zebra_DatePicker td.dp_selected,
+.Zebra_DatePicker .dp_footer .dp_hover,
+.Zebra_DatePicker td.dp_hover               { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px }
+
+/* VISIBLE/HIDDEN STATES (USE TRANSITIONS FOR EFFECTS) */
+
+.Zebra_DatePicker.dp_visible               { visibility: visible; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1; opacity: 1; transition: opacity 0.2s ease-in-out }
+.Zebra_DatePicker.dp_hidden                { visibility: hidden; filter: alpha(opacity=0); -khtml-opacity: 0; -moz-opacity: 0; opacity: 0 }
+
+/* HEADER CALENDARIO */
+
+.Zebra_DatePicker .dp_header td             { }
+
+.Zebra_DatePicker .dp_header .dp_previous,
+.Zebra_DatePicker .dp_header .dp_next       { width: 30px }
+
+.Zebra_DatePicker .dp_header .dp_caption    { font-weight: bold }
+.Zebra_DatePicker .dp_header .dp_hover      { background: #DEDEDE; color: #373737 }
+
+/* DATEPICKER */
+
+.Zebra_DatePicker .dp_daypicker th              { font-weight: bold }
+.Zebra_DatePicker td.dp_not_in_month            { color: #DEDEDE; cursor: default }
+.Zebra_DatePicker td.dp_not_in_month_selectable { }
+.Zebra_DatePicker td.dp_weekend                 { }
+.Zebra_DatePicker td.dp_weekend_disabled        { color: #DEDEDE; cursor: default }
+.Zebra_DatePicker td.dp_selected                { background: #ccc; color: #FFF !important }
+.Zebra_DatePicker td.dp_week_number             { cursor: text; font-weight: bold }
+
+/* MESES */
+
+.Zebra_DatePicker .dp_monthpicker td    { width: 33% }
+
+/* ANOS */
+
+.Zebra_DatePicker .dp_yearpicker td     { width: 33% }
+
+/* FOOTER */
+
+.Zebra_DatePicker .dp_footer            { margin-top: 3px }
+
+/* SOME MORE GLOBALS (MUST BE LAST IN ORDER TO OVERWRITE PREVIOUS PROPERTIES) */
+
+.Zebra_DatePicker td.dp_current             { color: #f00 }
+.Zebra_DatePicker td.dp_disabled_current    { color: #3A87AD }
+.Zebra_DatePicker td.dp_disabled            { color: #DEDEDE; cursor: default }
+.Zebra_DatePicker td.dp_hover               { background: #DEDEDE }
+
+/* ICON */
+
+button.Zebra_DatePicker_Icon   { display: block; position: absolute; width: 16px; height: 16px; background: none; text-indent: -9000px; border: none; cursor: pointer; padding: 0; line-height: 0; vertical-align: top }
+
